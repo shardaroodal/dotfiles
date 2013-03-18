@@ -17,6 +17,7 @@ alias safari="open -a safari"
 alias firefox="open -a firefox"
 alias opera="open -a opera"
 alias canary="open -a google\ chrome\ canary"
+alias canaryx="open -a google\ chrome\ canary --args  --disable-web-security"
 alias chrome="open -a google\ chrome"
 alias chromium="open -a chromium"
 alias dashcode="open -a dashcode"
@@ -24,7 +25,6 @@ alias f='open -a Finder'
 alias fireworks="open -a '/Applications/Adobe Fireworks CS6/Adobe Fireworks CS6.app'"
 alias photoshop="open -a '/Applications/Adobe Photoshop CS6/Adobe Photoshop.app'"
 alias gpr="~/code/gpr $1"
-alias nosec=" --disable-web-security"
 
 
 # general shortcuts
