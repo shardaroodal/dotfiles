@@ -1,6 +1,6 @@
-# Addy's dotfiles.
+# Sharda's dotfiles.
 
-This repo contains my personal dotfiles and are heavily based on [paul](https://github.com/paulirish/dotfiles/) and [mathias](https://github.com/mathiasbynens/dotfiles/)'s.
+This repo contains my personal dotfiles and are heavily based on [addy](https://github.com/addyosmani/dotfiles/), [paul](https://github.com/paulirish/dotfiles/) and [mathias](https://github.com/mathiasbynens/dotfiles/)'s.
 
 ## Some differences
 
@@ -107,7 +107,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## Installation
 
 ```bash
-git clone https://github.com/addyosmani/dotfiles.git && cd dotfiles && ./sync.sh
+git clone https://github.com/shardaroodal/dotfiles.git && cd dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.
