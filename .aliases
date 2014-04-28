@@ -7,7 +7,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # programs
-alias st='open -a "Sublime Text 2"'
+alias subl='open -a "Sublime Text 2"'
 # also/or do this:
 # ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 alias preview="open -a '$PREVIEW'"
@@ -22,8 +22,8 @@ alias chrome="open -a google\ chrome"
 alias chromium="open -a chromium"
 alias dashcode="open -a dashcode"
 alias f='open -a Finder'
-alias fireworks="open -a '/Applications/Adobe Fireworks CS6/Adobe Fireworks CS6.app'"
-alias photoshop="open -a '/Applications/Adobe Photoshop CS6/Adobe Photoshop.app'"
+alias fireworks="open -a 'Adobe Fireworks CS6'"
+alias photoshop="open -a 'Adobe Photoshop CS6'"
 alias gpr="~/code/gpr $1"
 
 
