@@ -108,6 +108,16 @@ gifify() {
   fi
 }
 
+convertgif() {
+	if [[ $2 == "mp4" ]]; then
+		ffmpeg -i $1 -c:v mpeg4 -crf 12 -an -y ${1%.gif}.mp4
+	elif [[ $2 == "webm" ]]; then
+		ffmpeg -i $1 -c:v libvpx -crf 12 -b:v 500K ${1%.gif}.webm
+	elif [[ $2 == "jpg" ]]; then
+		sips -s format jpeg $1 --out ${1%.gif}.jpg
+	fi
+}
+
 gif2jpeg() {
   find . -iname "*.gif" -type f -exec sh -c 'sips -s format jpeg "$0" --out "${0%.gif}.jpeg"' {} \;
 }
