@@ -10,6 +10,8 @@ export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
+export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
+
 # Some defaults
 PATH=/opt/X11/bin
 PATH=$PATH:/opt/local/bin
