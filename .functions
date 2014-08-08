@@ -119,7 +119,7 @@ convertgif() {
 }
 
 gif2jpeg() {
-  find . -iname "*.gif" -type f -exec sh -c 'sips -s format jpeg "$0" --out "${0%.gif}.jpeg"' {} \;
+  find . -iname "*.gif" -type f -exec sh -c 'sips -s format jpeg "$0" --out "${0%.gif}.jpg"' {} \;
 }
 
 wav2mp3() {
