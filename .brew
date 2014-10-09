@@ -1,30 +1,57 @@
 #!/bin/bash
 
+#Install Homebrew
+	#Inspired by https://github.com/thoughtbot/laptop/blob/master/mac-components/homebrew
+	if ! command -v brew >/dev/null; then
+		echo "Installing Homebrew, a good OS X package manager ..."
+		ruby <(curl -fsS https://raw.githubusercontent.com/Homebrew/install/master/install)
+
+		if ! grep -qs "recommended by brew doctor"; then
+			echo "Put Homebrew location earlier in PATH ..."
+			export PATH="/usr/local/bin:$PATH"
+		fi
+	else
+		echo "Homebrew already installed. Skipping ..."
+	fi
+
 # Make sure we’re using the latest Homebrew
 brew update
 
-# Upgrade any already-installed formulae
+# Upgrade any already-brew installed formulae
 brew upgrade
 
-# Install GNU core utilities (those that come with OS X are outdated)
+# brew install GNU core utilities (those that come with OS X are outdated)
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+# brew install some other useful utilities like `sponge`
+brew install moreutils
+# brew install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
 brew install findutils
-# Install Bash 4
+# brew install GNU `sed`, overwriting the built-in `sed`
+brew install gnu-sed --default-names
+# brew install Bash 4
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 brew install bash
+brew install bash-completion
 
-# Install wget with IRI support
+# brew install wget with IRI support
 brew install wget --enable-iri
 
-# Install more recent versions of some OS X tools
-brew tap homebrew/dupes
+# brew install more recent versions of some OS X tools
+brew install vim --override-system-vi
 brew install homebrew/dupes/grep
-brew tap josegonzalez/homebrew-php
+brew install homebrew/dupes/screen
 
-# Install everything else
+#brew install OpenSSL
+brew install openssl
+unlink openssl && brew link openssl --force
+
+# brew install other useful binaries
 brew install ack
 brew install git
+brew install git-flow
+brew install imagemagick --with-webp
+brew install node # This brew installs `npm` too using the recommended brew installation method
 brew install rename
 brew install tree
 
