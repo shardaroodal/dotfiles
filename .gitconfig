@@ -45,3 +45,5 @@
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
 [url "git@github.com:shardaroodal/"]
   insteadOf = "git://github.com/shardaroodal/"
+[user]
+	name = Sharda Roodal

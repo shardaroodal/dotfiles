@@ -1,5 +1,5 @@
+#!/bin/bash
 # Install native apps
-# Usage: `brew bundle Caskfile`
 
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
@@ -9,6 +9,8 @@ brew cask install alfred 						2> /dev/null
 brew cask install dropbox 						2> /dev/null
 brew cask install gyazo 						2> /dev/null
 brew cask install onepassword 					2> /dev/null
+brew cask install spotify						2> /dev/null
+brew cask install evernote						2> /dev/null
 
 # dev
 brew cask install iterm2 						2> /dev/null
@@ -16,12 +18,12 @@ brew cask install sublime-text 					2> /dev/null
 brew cask install charles						2> /dev/null
 brew cask install virtualbox					2> /dev/null
 brew cask install webstorm						2> /dev/null
-# brew cask install imagealpha 					2> /dev/null
-# brew cask install imageoptim 					2> /dev/null
+brew cask install macdown						2> /dev/null
 
 #Chat
 brew cask install hipchat						2> /dev/null
 brew cask install skype							2> /dev/null
+brew cask install adium							2> /dev/null
 
 # browsers
 brew cask install google-chrome 				2> /dev/null

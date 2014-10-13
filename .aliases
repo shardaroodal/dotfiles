@@ -20,17 +20,13 @@ alias canary="open -a google\ chrome\ canary"
 alias canaryx="open -a google\ chrome\ canary --args  --disable-web-security"
 alias chrome="open -a google\ chrome"
 alias chromium="open -a chromium"
-alias dashcode="open -a dashcode"
 alias f='open -a Finder'
 alias fireworks="open -a 'Adobe Fireworks CS6'"
 alias photoshop="open -a 'Adobe Photoshop CS6'"
-alias gpr="~/code/gpr $1"
-
 
 # general shortcuts
-alias pro="cd ~/projects"
-alias gh="open -a google\ chrome 'http://github.com/shardaroodal'"
-alias bl="open -a google\ chrome 'http://browserling.com'"
+alias projects="cd ~/Projects"
+alias gh="chrome 'http://github.com/shardaroodal'"
 
 # be nice
 alias please=sudo
